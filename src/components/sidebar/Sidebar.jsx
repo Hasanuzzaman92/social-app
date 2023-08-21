@@ -7,22 +7,13 @@ import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import RssFeedIcon from "@mui/icons-material/RssFeed";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
+import { Users } from "../../dummyData";
 
 import React from "react";
 
 import "./Sidebar.css";
 
 const Sidebar = () => {
-  const friends = [
-    { img: "/assests/persons/1.jpg", name: "Nila Alam" },
-    { img: "/assests/persons/2.jpg", name: "Sayed Mursalin" },
-    { img: "/assests/persons/3.jpg", name: "Hrithesh Varma" },
-    { img: "/assests/persons/4.jpg", name: "Angelina Jelli" },
-    { img: "/assests/persons/5.jpg", name: "Miss Ketty" },
-    { img: "/assests/persons/6.jpg", name: "Suruj Jaman" },
-    { img: "/assests/persons/7.jpg", name: "Adam White" },
-    { img: "/assests/persons/8.jpg", name: "John Doe" },
-  ];
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
@@ -67,10 +58,14 @@ const Sidebar = () => {
         <button className="sidebarButton">Show More...</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-          {friends.map((fr, index) => (
-            <li key={index} className="sidebarFriend">
-              <img src={fr.img} alt={fr.name} className="sidebarFriendImg" />
-              <span className="sidebarFriendName">{fr.name}</span>
+          {Users.map((user) => (
+            <li key={user.id} className="sidebarFriend">
+              <img
+                src={user.img}
+                alt={user.name}
+                className="sidebarFriendImg"
+              />
+              <span className="sidebarFriendName">{user.name}</span>
             </li>
           ))}
         </ul>
