@@ -12,7 +12,7 @@ const Post = ({ post }) => {
         <div className="postTop">
           <div className="postTopLeft">
             <img
-              src="/assests/persons/4.jpg"
+              src={Users.filter((user) => user.id === userId)[0].img}
               alt=""
               className="postProfileImage"
             />
