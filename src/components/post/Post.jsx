@@ -48,7 +48,12 @@ const Post = ({ post }) => {
               className="likeIcon"
               onClick={handleLikes}
             />
-            <img src="/assests/heart.png" alt="" className="likeIcon" />
+            <img
+              src="/assests/heart.png"
+              alt=""
+              className="likeIcon"
+              onClick={handleLikes}
+            />
             <span className="postLikeCounter">{liked} peoples like it</span>
           </div>
           <div className="postBottomRight">

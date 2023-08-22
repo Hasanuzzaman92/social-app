@@ -7,14 +7,14 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <TopBar />
       <div className="homeContainer">
         <Sidebar />
         <Feed />
         <Rightbar />
       </div>
-    </div>
+    </>
   );
 };
 
