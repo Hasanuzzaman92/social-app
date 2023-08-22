@@ -20,7 +20,7 @@ const Login = () => {
               className="loginInput"
             />
             <button className="loginButton">Log In</button>
-            <span className="loginForgot">Forgot password</span>
+            <span className="loginForgot">Forgot password?</span>
             <button className="loginRegisterButton">
               Create a new account
             </button>
